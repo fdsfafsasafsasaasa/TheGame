@@ -13,6 +13,6 @@ unsigned int Ship::takeDamage(Ship attacker){
 };
 
 void Ship::die(Ship killer){
-    std::cout << "Your ass got fucked by this ship " << killer.name << "." << std::endl;
+    std::cout << "You got killed by " << killer.name << "." << std::endl;
     this->health = 0;
 };
