@@ -3,18 +3,13 @@
 class Ship{
 
     public:
-
-        Ship(unsigned int health, unsigned int damage){
-            std::cout << "Initializing ship with health " << health << " and damage " << damage << std::endl;
-        };
-
         void drawShip();
         unsigned int takeDamage(Ship attacker);
         std::string name;
+        std::string shipType;
 
     private:
-        std::string shipType;
-        int health;
-        int damage;
+        int health = 50;
+        int damage = 100;
         void die(Ship killer);
 };

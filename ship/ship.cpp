@@ -1,9 +1,6 @@
 #include <iostream>
 #include "ship.hpp"
 
-
-
-
 unsigned int Ship::takeDamage(Ship attacker){
     this->health -= attacker.damage;
     if(this->health <= 0){
