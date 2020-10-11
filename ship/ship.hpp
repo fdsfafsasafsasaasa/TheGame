@@ -15,6 +15,7 @@ class Ship {
         std::string name;
         std::string shipType;
         std::list<float> DistanceTo(Ship otherShip);
+        
     private:
         int health = 50;
         int damage = 100;
