@@ -2,6 +2,13 @@
 #include <list>
 #include "ship.hpp"
 
+
+Ship::Ship(unsigned int health, unsigned int damage, std::string name){
+    health = health;
+    damage = damage;
+    name = name;
+}
+
 unsigned int Ship::takeDamage(Ship attacker){
     this->health -= attacker.damage;
     if(this->health <= 0){
@@ -24,9 +31,4 @@ std::list<float> Ship::DistanceTo(Ship otherShip){
 
     std::list<float> distanceTo = {xDistanceTo, yDistanceTo};
     return distanceTo;
-}
-
-Ship::Ship(unsigned int health, unsigned int damage){
-    health = health;
-    damage = damage;
 }
