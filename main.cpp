@@ -2,7 +2,7 @@
 #include "ship/ship.cpp"
 
 int main(){
-    Ship myShip = Ship();
-    Ship enemyShip = Ship();
+    Ship myShip;
+    Ship enemyShip;
     myShip.takeDamage(enemyShip);
 }
