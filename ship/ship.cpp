@@ -25,3 +25,8 @@ std::list<float> Ship::DistanceTo(Ship otherShip){
     std::list<float> distanceTo = {xDistanceTo, yDistanceTo};
     return distanceTo;
 }
+
+Ship::Ship(unsigned int health, unsigned int damage){
+    health = health;
+    damage = damage;
+}
