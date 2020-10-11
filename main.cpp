@@ -1,7 +1,7 @@
 #include "ship/ship.cpp"
 
 int main(){
-    Ship myShip = Ship(10, 10, "cock and balls");
-    Ship enemyShip = Ship(10, 10, "sugma lol");
+    Ship myShip = Ship(10, 10, "moe");
+    Ship enemyShip = Ship(10, 15, "lester");
     myShip.takeDamage(enemyShip);
 }
