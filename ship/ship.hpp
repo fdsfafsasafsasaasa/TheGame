@@ -14,7 +14,7 @@ class Ship {
     private:
         int health = 50;
         int damage = 100;
-        float xPos = 50.0f;
-        float yPos = 50.0f;
+        float xPos = 5.0f;
+        float yPos = 5.0f;
         void die(Ship killer);
-};
+};  

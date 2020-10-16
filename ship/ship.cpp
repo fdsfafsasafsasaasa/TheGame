@@ -17,7 +17,7 @@ unsigned int Ship::takeDamage(Ship attacker){
         return 0;
     }
     else {
-        return this->health;
+		return this->health;
     };
 };
 
@@ -32,4 +32,4 @@ std::list<float> Ship::DistanceTo(Ship otherShip){
 
     std::list<float> distanceTo = {xDistanceTo, yDistanceTo};
     return distanceTo;
-}
+};
